@@ -56,5 +56,12 @@ namespace Steam2
                                               orderby item.Name ascending
                                               select item;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            productBindingSource.DataSource = from item in steam
+                                              orderby item.Name descending
+                                              select item;
+        }
     }
 }
