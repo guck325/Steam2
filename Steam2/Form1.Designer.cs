@@ -35,19 +35,19 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.productBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buyDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.productBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -115,17 +115,34 @@
             this.dataGridView1.Size = new System.Drawing.Size(347, 414);
             this.dataGridView1.TabIndex = 6;
             // 
-            // productBindingSource
+            // button6
             // 
-            this.productBindingSource.DataSource = typeof(Steam2.Product);
+            this.button6.Location = new System.Drawing.Point(592, 22);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(200, 64);
+            this.button6.TabIndex = 7;
+            this.button6.Text = "가격이 높은 순으로 보기";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // productBindingSource1
+            // button7
             // 
-            this.productBindingSource1.DataSource = typeof(Steam2.Product);
+            this.button7.Location = new System.Drawing.Point(592, 102);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(200, 64);
+            this.button7.TabIndex = 8;
+            this.button7.Text = "가격이 낮은 순으로 보기";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
-            // productBindingSource2
+            // button8
             // 
-            this.productBindingSource2.DataSource = typeof(Steam2.Product);
+            this.button8.Location = new System.Drawing.Point(592, 182);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(200, 64);
+            this.button8.TabIndex = 9;
+            this.button8.Text = "무료 게임";
+            this.button8.UseVisualStyleBackColor = true;
             // 
             // nameDataGridViewTextBoxColumn
             // 
@@ -145,33 +162,17 @@
             this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
             this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
             // 
-            // button6
+            // productBindingSource2
             // 
-            this.button6.Location = new System.Drawing.Point(592, 22);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(200, 64);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "가격이 높은 순으로 보기";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.productBindingSource2.DataSource = typeof(Steam2.Product);
             // 
-            // button7
+            // productBindingSource
             // 
-            this.button7.Location = new System.Drawing.Point(592, 102);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(200, 64);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "가격이 낮은 순으로 보기";
-            this.button7.UseVisualStyleBackColor = true;
+            this.productBindingSource.DataSource = typeof(Steam2.Product);
             // 
-            // button8
+            // productBindingSource1
             // 
-            this.button8.Location = new System.Drawing.Point(592, 182);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(200, 64);
-            this.button8.TabIndex = 9;
-            this.button8.Text = "무료 게임";
-            this.button8.UseVisualStyleBackColor = true;
+            this.productBindingSource1.DataSource = typeof(Steam2.Product);
             // 
             // Form1
             // 
@@ -191,9 +192,9 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
