@@ -94,6 +94,7 @@
             this.button4.TabIndex = 4;
             this.button4.Text = "구매율이 높은 순으로 보기";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
