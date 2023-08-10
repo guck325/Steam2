@@ -10,5 +10,6 @@ namespace Steam2
     {
         public string Name { get; set; }
         public int Buy { get; set; }
+        public int Price { get; set; }  
     }
 }
